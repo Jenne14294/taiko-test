@@ -33,7 +33,7 @@ sudo apt install -y mongodb-org
 
 sudo mkdir -p /srv/taiko-web
 sudo chown $USER /srv/taiko-web
-git clone https://github.com/Shuai-Xin/taiko-bui-backup.git /srv/taiko-web
+git clone https://github.com/269Seahorse/Better-taiko-web.git /srv/taiko-web
 
 cd /srv/taiko-web
 tools/get_version.sh

@@ -33,7 +33,7 @@ sudo apt install -y mongodb-org
 
 sudo mkdir -p /srv/taiko-web
 sudo chown $USER /srv/taiko-web
-git clone https://github.com/269Seahorse/Better-taiko-web.git /srv/taiko-web
+git clone -b 20.04.01 https://github.com/269Seahorse/Better-taiko-web.git /srv/taiko-web
 
 cd /srv/taiko-web
 

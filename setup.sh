@@ -49,7 +49,7 @@ jsonschema==3.2.0
 pymongo==3.11.2
 redis==3.5.3
 requests==2.25.1
-websockets==9.1
+websockets==8.1
 Werkzeug==2.0.0
 jinja2==3.0.3
 EOF

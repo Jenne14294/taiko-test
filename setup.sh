@@ -47,6 +47,24 @@ sudo sed -i 's/}/    application\/wasm wasm;\n}/g' /etc/nginx/mime.types
 sudo nginx -s reload
 
 python3 -m venv .venv
+
+cat << EOF > requirements.txt
+bcrypt==3.2.0
+ffmpy==0.2.3
+Flask==2.0.3
+Flask-Caching==1.9.0
+Flask-Session==0.3.2
+Flask-WTF==0.14.3
+gunicorn==20.0.4
+jsonschema==3.2.0
+pymongo==3.11.2
+redis==3.5.3
+requests==2.25.1
+websockets==8.1
+Werkzeug==2.0.0
+jinja2==3.0.3
+EOF
+
 .venv/bin/pip install --upgrade pip wheel setuptools
 .venv/bin/pip install -r requirements.txt
 

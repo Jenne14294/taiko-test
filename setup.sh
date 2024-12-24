@@ -36,6 +36,24 @@ sudo chown $USER /srv/taiko-web
 git clone https://github.com/Shuai-Xin/taiko-bui-backup.git /srv/taiko-web
 
 cd /srv/taiko-web
+
+cat << EOF > requirements.txt
+bcrypt==3.2.0
+ffmpy==0.2.3
+Flask==2.0.3
+Flask-Caching==1.9.0
+Flask-Session==0.3.2
+Flask-WTF==0.14.3
+gunicorn==20.0.4
+jsonschema==3.2.0
+pymongo==3.11.2
+redis==3.5.3
+requests==2.25.1
+websockets==9.1
+Werkzeug==2.0.0
+jinja2==3.0.3
+EOF
+
 tools/get_version.sh
 cp tools/hooks/* .git/hooks/
 cp config.example.py config.py
